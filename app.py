@@ -25,7 +25,7 @@ st.set_page_config(page_title="TalentScout-An AI Hiring Assistant", layout="wide
         'About': "# TalentScout: An AI Hiring Assistant (Powered by Gemini)"
       })
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = "AIzaSyAXwAUSoKceYppnifiYSvgzvyXmfX39Gug"
 JSON_FILE_PATH = "data.json"
 
 safety_settings = [
