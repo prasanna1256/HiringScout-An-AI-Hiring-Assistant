@@ -1,7 +1,2 @@
-<<<<<<< HEAD
 google-generativeai
 python-dotenv
-=======
-google-generativeai
-python-dotenv
->>>>>>> 4fc35c2 (final changes)
