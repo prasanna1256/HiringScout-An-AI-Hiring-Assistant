@@ -1,16 +1,6 @@
 {
     "users": [
-        {
-            "name": "prasanna reddy",
-            "email": "prasannareddytavanam@gmail.com",
-            "age": 20,
-            "gender": "Male",
-            "skills": "java,python,sql,tensorflow,ml,pandas,numpy,matplotlib,opencv,pytorch,ml,ai",
-            "experience": "Fresher",
-            "password": "f239479758979a67e445fe8a11f201d2c063e31f636aff62bad8a0789ac08f93",
-            "exams": null,
-            "highlights": null,
-        }
+        
     ]
             
 }
