@@ -1,8 +1,0 @@
-streamlit
-google-generativeai
-python-dotenv
-hashlib
-re
-random
-json
-time
