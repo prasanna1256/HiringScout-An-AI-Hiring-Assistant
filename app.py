@@ -18,14 +18,14 @@ if "user_info" not in st.session_state:
 if "previous_questions" not in st.session_state:
     st.session_state["previous_questions"] = []
 
-st.set_page_config(page_title="TalentScout-An AI Hiring Assistant", layout="wide",initial_sidebar_state="auto",
+st.set_page_config(page_title="HiringScout-An AI Hiring Assistant", layout="wide",initial_sidebar_state="auto",
     menu_items={
         'Get Help': 'https://github.com/prasanna1256/',
         'Report a bug': "https://github.com/prasanna1256/",
-        'About': "# TalentScout: An AI Hiring Assistant (Powered by Gemini)"
+        'About': "# HiringScout: An AI Hiring Assistant (Powered by Gemini)"
       })
 
-GEMINI_API_KEY = "AIzaSyAXwAUSoKceYppnifiYSvgzvyXmfX39Gug"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 JSON_FILE_PATH = "data.json"
 
 safety_settings = [
@@ -48,7 +48,7 @@ Follow these steps precisely:
     * Tech Stack: Ask them to list their main programming languages, frameworks, databases, and tools, separated by commas.
 3.  **Generate & Ask Questions:** ONLY after successfully gathering the tech stack, analyze it. Generate 3-5 relevant technical questions *specifically tailored* to the listed technologies. Ask these technical questions one at a time, waiting for the candidate's answer before asking the next.
 4.  **Conversation Flow:** Maintain the context of the conversation. If the user provides information before you ask for it, acknowledge it and move to the next required piece of information. If input is unclear (e.g., for years of experience), politely ask for clarification. Stay focused ONLY on the screening process (info gathering and technical questions). Do not engage in off-topic discussions and go for next questions instead of explaining topic to user.
-* Score their skill set on scale of 100, based on the answers given and suggest weak points,mention few points to mainly focus on.
+* Score their skill set on scale of 100, based on the answers given and suggest weak points,mention few steps to mainly focus on. Suggest jobs and internships with links related to his skills
 5.  **Ending:** If the user types "exit", "quit","bye","thanks","thank you", or similar keywords at any point, OR after you have finished asking all the generated technical questions, thank them sincerely for their time, inform them their information has been recorded and someone from the hiring team will be in touch about the next steps, and say goodbye professionally.
 6.  **Tone:** Be conversational, encouraging, and maintain a professional tone throughout.
 """
