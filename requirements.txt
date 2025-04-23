@@ -1,8 +1,8 @@
-streamlit
-google-generativeai
-python-dotenv
 hashlib
 re
 random
 json
 time
+streamlit==1.44.1
+google-generativeai==0.8.5
+python-dotenv==1.1.0
